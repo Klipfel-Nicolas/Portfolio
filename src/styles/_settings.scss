@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/fonts/Balqis.ttf);
+}
+
+@font-face {
+    font-family: "font-bold";
+    src: url(../assets/fonts/Memba-Bold.otf);
+}
+
+@font-face {
+    font-family: "font-2";
+    src: url(../assets/fonts/Afronik.otf);
+}
+
+@font-face {
+    font-family: "font-3";
+    src: url(../assets/fonts/Alegra-Regular.otf);
+}
+
+@font-face {
+    font-family: "font-4";
+    src: url(../assets/fonts/cramaten.ttf);
+}
+
+@font-face {
+    font-family: "font-special";
+    src: url(../assets/fonts/AfronikSoft-Regular.otf);
+}
+
+@font-face {
+    font-family: "font-brand";
+    src: url(../assets/fonts/Robertortiz.ttf);
+}
+
+@font-face {
+    font-family: "font-manuscrite";
+    src: url(../assets/fonts/Belleson.otf);
+}
+
+@font-face {
+    font-family: "new";
+    src: url(../assets/fonts/wanoQuin.otf);
+}
+
+$font-poiret:'Poiret One',
+cursive;
+$font-new: 'new',
+cursive;
+$font-megrim:'megrim',
+cursive;
+$font-1: "font-1",
+sans-serif;
+$font-2: "font-2",
+serif;
+$font-3: "font-3",
+sans-serif;
+$font-4: "font-4",
+serif;
+$font-5: "font-5",
+sans-serif;
+$font-special: "font-special",
+sans-serif;
+$font-brand: "font-brand",
+cursive;
+$font-manuscrite: 'font-manuscrite',
+cursive;
+$font-bold: "font-bold",
+cursive;
+$color-1:rgb(102, 250, 211);
+$color-2:rgb(212, 148, 23);
+$color-3:rgba(255, 255, 255, 0.871);
+$color-4:#ffffff99;
+$color-5:rgba(255, 255, 255, 0.38);
+$black: black;
+$color-6: #87e7e1;
+$color-blue3: #1bcfc4;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: $font-3;
+    letter-spacing: 1px;
+    font-family: $font-3;
+}
+
+html {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+body {
+    background-color: $black;
+    min-height: 100vh;
+    color: $color-3;
+}
+
+.home,
+.about,
+.skills,
+.works,
+.contact {
+    padding: 2% 5%;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    margin-left: 5%;
+    text-align: left;
+    font-family: $font-3;
+    font-size: 2rem;
+    color: $color-3;
+    margin-left: 20%;
+}
+
+.sentence.handFont {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 15%;
+    left: 20%;
+}
+
+.container {
+    margin-left: 10vw;
+    width: 85vw;
+    height: 90vh;
+}
+
+a,
+a:visited {
+    color: $color-1;
+}
+
+.handFont {
+    font-family: 'Dawning of a New Day';
+    font-size: 1.3rem;
+    color: $color-5;
+    opacity: .8;
+}
