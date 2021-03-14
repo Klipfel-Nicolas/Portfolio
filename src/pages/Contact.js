@@ -7,6 +7,7 @@ import LanguageContext from '../components/LanguageContext';
 import BlocContact from '../components/BlocContact';
 import ContactForm from '../components/ContactForm';
 import SocialNetwork from '../components/SocialNetwork';
+import Mouse from '../components/Mouse';
 
 const Contact = () => {
 
@@ -16,6 +17,7 @@ const Contact = () => {
     return (
         <div className="contact">
             <Navigation/>
+            <Mouse/>
             <ParametresBanner/>
             <h2>.Contact</h2>
             <div className="container">
@@ -26,7 +28,7 @@ const Contact = () => {
                             {language.language === "Shakespeare" ? en.title : fr.title }
                             <span> {language.language === "Shakespeare" ? en.span : fr.span }</span>
                         </h3>
-                        <p>{language.language === "Shakespeare" ? en.p : fr.p }</p>
+                        <p className="handFont">{language.language === "Shakespeare" ? en.p : fr.p }</p>
                     </div>
                     
                     <div className="formContains">

@@ -20,13 +20,13 @@ const App = () => {
     
     return (
         <LanguageContext.Provider value={contextValue}>
-        <Switch>
-            <Route path='/' exact component={Home}/>
-            <Route path='/about' exact component={About}/>
-            <Route path='/skills' exact component={Skills}/>
-            <Route path='/works' exact component={Works}/>
-            <Route path='/contact' exact component={Contact}/>
-        </Switch>
+            <Switch>
+                <Route path='/' exact component={Home}/>
+                <Route path='/about' exact component={About}/>
+                <Route path='/skills' exact component={Skills}/>
+                <Route path='/works' exact component={Works}/>
+                <Route path='/contact' exact component={Contact}/>
+            </Switch>
         </LanguageContext.Provider>
     );
 };

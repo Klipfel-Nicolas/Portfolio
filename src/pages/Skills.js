@@ -11,6 +11,7 @@ import SocialNetwork from '../components/SocialNetwork';
 import ParametresBanner from '../components/ParametresBanner';
 import BtnDestruc from '../components/BtnDestruc';
 import {skillsDatas} from '../data/languages-data';
+import Mouse from '../components/Mouse';
 
 
 const Skills = () => {
@@ -20,9 +21,10 @@ const Skills = () => {
     const toggleTabs = (e)=>{
         
         if(e.target.parentNode.classList.contains('active') || e.target.classList.contains('active')) return;
-        document.querySelector('.tabs-container .active').classList.remove('active')
+        document.querySelector('.tabs-container .active').classList.remove('active'); 
         document.querySelector('article.active').classList.remove('active');
-        document.querySelectorAll('article').forEach(article =>{
+        
+        document.querySelectorAll('article').forEach(article =>{           
             if(article.id === e.target.parentNode.classList[0]){
                 article.classList.add('active');  
                 e.target.parentNode.classList.add('active');
@@ -34,23 +36,24 @@ const Skills = () => {
     }
     
     return (
-        <div className="skills">
+        <div className="skills">      
             <Navigation/>
+            <Mouse />
             <ParametresBanner/>
             <h2>{language.language === "Shakespeare" ? ".Skills" : ".Competences"}</h2> 
             
             <div className="container">
-            
-                <div className="tabs-container">
-                     <p className="handFont">{language.language === "Shakespeare" ? skillsDatas.en.global : skillsDatas.fr.global}</p>
+                <p className="handFont sentence">{language.language === "Shakespeare" ? skillsDatas.en.global : skillsDatas.fr.global}</p>
+                
+                <div className="tabs-container">    
                     <ul>
-                        <li className="front-end active" onClick={(e)=> toggleTabs(e)}>
+                        <li className="front-end active hover" onClick={(e)=> toggleTabs(e)}>
                             <BtnDestruc word={"Front-end"}/>
                         </li>
-                        <li className="back-end" onClick={(e)=> toggleTabs(e)}>
+                        <li className="back-end hover" onClick={(e)=> toggleTabs(e)}>
                             <BtnDestruc word={"Back-end"}/>
                         </li>
-                        <li className="other" onClick={(e)=> toggleTabs(e)}>
+                        <li className="other hover" onClick={(e)=> toggleTabs(e)}>
                             <BtnDestruc word={"Other"}/>
                         </li>
                     </ul>

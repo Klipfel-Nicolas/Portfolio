@@ -1,6 +1,6 @@
-import colchis from '../img/colchis.png';
-import sushi from '../img/sushi.png';
-import bibliflix from '../img/bibliflix.png'
+import colchis from '../assets/img/colchis.png';
+import sushi from '../assets/img/sushi.png';
+import bibliflix from '../assets/img/bibliflix.png'
 
 
 export const projectList = {

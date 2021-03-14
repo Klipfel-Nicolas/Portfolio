@@ -29,8 +29,6 @@ const ParametresBanner = () => {
    
     }
 
-    
-
     // RENDER ____________
 
     return (
@@ -38,12 +36,20 @@ const ParametresBanner = () => {
             <h1>{language.language === "Shakespeare" ? `< Front-end developer />` : `< Developpeur front-end />` }</h1>
             <div className="languages" onChange={onChangeLanguage}>
                 <p>lang: </p>
-                <label htmlFor="Moliere" id="Moliere">Moliere
+                <label 
+                    htmlFor="Moliere" 
+                    id="Moliere" 
+                    className="hover"
+                >Moliere
                     <input type="radio" name="language" value="Moliere" />
                 </label>
                 
-                <label htmlFor="Shakespeare" id="Shakespeare">Shakespeare
-                    <input type="radio" name="language" value="Shakespeare"/>
+                <label 
+                    htmlFor="Shakespeare" 
+                    id="Shakespeare" 
+                    className="hover "     
+                >Shakespeare
+                    <input type="radio" name="language" value="Shakespeare" />
                 </label>
             </div>
         </header>

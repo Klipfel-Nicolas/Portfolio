@@ -22,8 +22,8 @@ const Navigation = () => {
                     {   
                         language.language === "Shakespeare" ? navDatas.menuEng.map( (data, i) =>{
                             return(
-                            <NavLink to={data[1]} exact activeClassName='nav-active' key={data[1]}>
-                                <li key={i}>
+                            <NavLink to={data[1]} exact activeClassName='nav-active' key={data[1]} className="hover">
+                                <li key={i} >
                                     {data[0].split('').map((letter, i )=>{
                                         return(
                                         <span data-letter={Math.floor(Math.random() * 5) + 1  } key={i}>{letter}</span>
@@ -34,8 +34,8 @@ const Navigation = () => {
                             )
                         }) : navDatas.menuFr.map( (data, i) =>{
                             return(
-                            <NavLink to={data[1]} exact activeClassName='nav-active' key={data[1]}>
-                                <li key={i}>
+                            <NavLink to={data[1]} exact activeClassName='nav-active' key={data[1]} className="hover">
+                                <li key={i} >
                                     {data[0].split('').map((letter, i )=>{
                                         return(
                                         <span data-letter={Math.floor(Math.random() * 5) + 1  } key={i}>{letter}</span>
@@ -53,7 +53,7 @@ const Navigation = () => {
             </div>
                 
             <div className="location">
-                <p>Strasbourg</p>
+                <a href="https://www.strasbourg.eu/" className="hover" target="blank">Strasbourg</a>
                 <p>France</p>
             </div>
             

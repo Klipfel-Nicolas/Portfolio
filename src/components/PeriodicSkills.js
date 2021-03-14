@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import * as THREE from "three";
 import { CSS3DObject, CSS3DRenderer } from 'three-css3drenderer';
 import TrackballControls from 'three-trackballcontrols';
-import { table } from "../data/skillsThree";
+import { table } from "../data/languages-data";
 import * as TWEEN from 'tween.js'
 import DestrucBtn from './DestrucBtn';
 
@@ -230,15 +230,17 @@ class PeriodicSkills extends Component {
     render () {
         
         return (
-            <div id="periodic-container">
+            <>
+                <div id="periodic-container" className="hover hovTxt" data-txt="scroll & drag">
     	     
-                <div id="menu">
-                    <div id="table"><DestrucBtn word={"TABLE"}/></div>
-                    <div id="sphere"><DestrucBtn word={"SPHERE"}/></div>
-                    <div id="helix"><DestrucBtn word={"HELIX"}/></div>
-                    <div id="grid"><DestrucBtn word={"GRID"}/></div>
                 </div>
-            </div>
+                <ul id="menu" >
+                    <li id="table" className="hover"><DestrucBtn word={"TABLE"}/></li>
+                    <li id="sphere"><DestrucBtn word={"SPHERE"}/></li>
+                    <li id="helix"><DestrucBtn word={"HELIX"}/></li>
+                    <li id="grid"><DestrucBtn word={"GRID"}/></li>
+                </ul>
+        </>
         )
     }
 }

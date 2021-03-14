@@ -14,7 +14,7 @@
         color: $color-1;
     }
     .navList {
-        height: 40%;
+        height: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -32,29 +32,24 @@
                     display: none;
                 }
                 li {
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        height: 100%;
+                        top: 0;
+                    }
                     &::before {
                         content: '<';
-                        position: absolute;
-                        top: 0;
                         left: -15px;
-                        height: 100%;
-                        background-color: transparent;
                     }
                     &::after {
                         content: '/>';
-                        position: absolute;
-                        top: 0;
-                        height: 100%;
                         right: -15px;
                     }
                 }
             }
             a {
                 position: relative;
-                span {
-                    font-size: .9rem;
-                    letter-spacing: 0;
-                }
                 &:hover {
                     &::before {
                         left: -10%;
@@ -86,7 +81,7 @@
                     }
                     [data-letter="2"] {
                         opacity: 0;
-                        transition: all .6s cubic-bezier(.19, 1, .22, 1) .1s;
+                        transition: all .6s cubic-bezier(.19, 1, .22, 1) .10s;
                     }
                     [data-letter="3"] {
                         opacity: 0;
@@ -94,7 +89,7 @@
                     }
                     [data-letter="4"] {
                         opacity: 0;
-                        transition: all .6s cubic-bezier(.19, 1, .22, 1) .2s;
+                        transition: all .6s cubic-bezier(.19, 1, .22, 1) .20s;
                     }
                     [data-letter="5"] {
                         opacity: 0;
@@ -111,11 +106,8 @@
         }
     }
     .location {
-        p:first-child {
+        a {
             color: $color-1;
-        }
-        p:nth-child(2) {
-            color: $color-3;
         }
     }
 }

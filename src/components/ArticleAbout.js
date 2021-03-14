@@ -7,24 +7,15 @@ const ArticleAbout = props => {
     const { imageC, height, name, firstName, infos} = props;
 
     return (
-        <li className="article-container" style={{height: `${height}%`}} >
-    
-            <div 
-                className="article" 
-                style={{backgroundImage: `url(${imageC})`} }
-            >
-                
-                <div className="name">
-                   {name} 
-                </div>
-                <div className="firstName">
-                    {firstName}
-                </div>
-            </div>
+        <li className="article-container hover hovTxt" data-txt="Click" style={{height: `${height}%`}} >
             
+            <div className="name">{name} </div> 
+            <div className="article"style={{backgroundImage: `url(${imageC})`} }></div>
+            <div className="firstName">{firstName}</div>    
+                    
             <div className="infos">
-                
-                    <h5 className="title">{
+                <h5 className="title">{
+                    
                         language.language === "Shakespeare" ? infos.en.title.split('').map((letter,i) => {
                             if(i%2 === 0){
                                 return  <span 
@@ -60,11 +51,11 @@ const ArticleAbout = props => {
                         })
                         
                     }
-                    </h5>
+                </h5>
                 
                 <div className="quotesBloc">
-                    <p className="quote">{language.language === "Shakespeare" ? infos.en.paragraphe : infos.fr.paragraphe }</p>
-                    <p className="author">{language.language === "Shakespeare" ? infos.en.author : infos.fr.author }</p>
+                    <p className="quote handFont">{language.language === "Shakespeare" ? infos.en.paragraphe : infos.fr.paragraphe }</p>
+                    <p className="author handFont">{language.language === "Shakespeare" ? infos.en.author : infos.fr.author }</p>
                 </div>
 
             </div>

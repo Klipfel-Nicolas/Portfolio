@@ -17,7 +17,6 @@
             padding: 0;
         }
         h4 {
-            font-family: $font-bold;
             font-size: 1.3rem;
             margin-bottom: 3%;
             color: $color-3;
@@ -27,7 +26,6 @@
             letter-spacing: .2rem;
             transition: all .3s;
             &:hover {
-                cursor: pointer;
                 color: $color-2;
                 letter-spacing: .1rem;
             }

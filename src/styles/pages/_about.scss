@@ -11,11 +11,21 @@
             padding: 0 2%;
             width: 9%;
             transition: all .7s;
+            .name,
+            .firstName {
+                position: absolute;
+                color: $color-1;
+                font-size: 2.5rem;
+                width: 50%;
+                text-align: center;
+            }
+            .name {
+                top: -5rem;
+            }
+            .firstName {
+                bottom: -5rem;
+            }
             .article {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
                 width: 70%;
                 margin: 0 auto;
                 background-position: center;
@@ -26,22 +36,6 @@
                 /* Pour les navigateurs Chrome, Safari, Opera */
                 filter: grayscale(100%);
                 /* Firefox */
-                .name,
-                .firstName {
-                    position: absolute;
-                    color: $color-5;
-                    font-size: 2.5rem;
-                    width: 100%;
-                    text-align: center;
-                    font-family: $font-1;
-                    transition: all .5s;
-                }
-                .name {
-                    top: -5rem;
-                }
-                .firstName {
-                    bottom: -5rem;
-                }
                 &::before {
                     position: absolute;
                     content: "";
@@ -55,7 +49,6 @@
                 }
                 &:hover {
                     border: none;
-                    // width: 70%;
                 }
             }
             .infos {
@@ -68,7 +61,6 @@
                     width: 100%;
                     left: 0%;
                     top: -25%;
-                    transition: opacity ease-in-out .3s;
                     span {
                         font-size: 8rem;
                         font-family: $font-2;
@@ -83,42 +75,36 @@
                     position: absolute;
                     width: 600px;
                     height: 100%;
-                    top: 50%;
+                    top: 60%;
                     left: 10%;
-                    font-size: 1.7rem;
-                    opacity: 0;
                     transform: scaleX(0);
-                    transition: opacity ease-in-out .4s;
-                    color: $color-4;
-                    .quote {
-                        width: 80%;
-                        padding: 5% 5%;
+                    .quote,
+                    .author {
                         font-family: $font-manuscrite;
-                        font-size: 1.1rem;
-                        letter-spacing: .2rem;
-                        transform: translateX(-20%);
                         transition: transform ease-out .6s;
                     }
+                    .quote {
+                        width: 80%;
+                        margin-left: -5%;
+                        font-size: 1.2rem;
+                        letter-spacing: .2rem;
+                    }
                     .author {
-                        width: 85%;
-                        font-family: $font-manuscrite;
                         text-align: end;
-                        transform: translateX(20%);
-                        transition: transform ease-out .6s;
                     }
                 }
             }
             &:hover {
-                width: 80%;
+                width: 100%;
                 .article {
                     width: 100%;
                     border: 0px;
                     -webkit-filter: grayscale(0%);
                     filter: grayscale(0%);
-                    .name,
-                    .firstName {
-                        opacity: 0;
-                    }
+                }
+                .name,
+                .firstName {
+                    opacity: 0;
                 }
             }
         }
@@ -126,23 +112,24 @@
         .article-container.active {
             width: 100%;
             .article {
-                width: 60%;
+                width: 80%;
                 border: 0px;
                 -webkit-filter: grayscale(0%);
                 filter: grayscale(0%);
-                .name,
-                .firstName {
-                    display: none;
-                }
                 &::before {
                     opacity: .9;
                 }
+            }
+            .name,
+            .firstName {
+                display: none;
             }
             .infos {
                 .title {
                     transform: scaleY(1);
                     span {
                         max-height: 100%;
+                        padding-top: 15px;
                     }
                 }
                 .quotesBloc {

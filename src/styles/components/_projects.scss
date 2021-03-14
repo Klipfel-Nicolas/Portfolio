@@ -72,7 +72,6 @@
         [data-index] {
             transform: translatex(50px);
             color: $color-1;
-            cursor: pointer;
             letter-spacing: .2rem;
             &::before {
                 content: '<';
@@ -197,7 +196,6 @@
                 padding: 5% 0;
                 background: none;
                 transform: translateX(30px);
-                cursor: pointer;
                 position: relative;
                 overflow: hidden;
                 border: 1px solid rgba(255, 255, 255, .1);
@@ -263,7 +261,7 @@
             position: relative;
             width: 90%;
             height: 55%;
-            transform: translateX(20%);
+            transform: translateX(50%);
             transition: all .5s ease-in-out;
             .infos-card {
                 width: 100%;
@@ -294,21 +292,19 @@
                         line-height: 8rem;
                         font-size: 15rem;
                         color: rgba(255, 255, 255, .2);
-                        font-family: $font-bold;
+                        font-family: $font-1;
                         -webkit-text-stroke: 4px rgba(0, 0, 0, 0.2);
                     }
                     .technos {
-                        font-size: 3rem;
+                        font-size: 4rem;
                         color: $color-2;
-                        //opacity: .8;
                         -webkit-text-stroke: 1px $black;
-                        font-family: $font-bold;
+                        font-family: $font-2;
                         transform: translateZ(100px);
                     }
                     .description {
                         font-size: 1.3rem;
                         line-height: 2.3rem;
-                        font-family: $font-3;
                         margin-left: 30%;
                     }
                 }

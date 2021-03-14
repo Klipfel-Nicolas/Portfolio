@@ -25,14 +25,14 @@ const SocialNetwork = () => {
     return (
         <div className="social-network">
             <ul className="social-list">
-                <a href="https://www.linkedin.com/in/nicolas-klipfel-7871a21b3/" target='blank' rel="noopener noreferrer" onMouseOver={handleIcon}>
-                    <li><IoLogoLinkedin size={25}/></li>
+                <a href="https://www.linkedin.com/in/nicolas-klipfel-7871a21b3/" className="hover" target='blank' rel="noopener noreferrer" onMouseOver={handleIcon}>
+                    <li ><IoLogoLinkedin size={25}/></li>
                 </a>
-                <a href="https://www.instagram.com/don_key.shot_devfront/" target='blank' rel="noopener noreferrer" onMouseOver={handleIcon}>
-                    <li><IoLogoInstagram size={25}/></li>
+                <a href="https://www.instagram.com/don_key.shot_devfront/" className="hover" target='blank' rel="noopener noreferrer" onMouseOver={handleIcon}>
+                    <li ><IoLogoInstagram size={25}/></li>
                 </a>
-                <a href="https://twitter.com/DCodeshot" target='blank' rel="noopener noreferrer" onMouseOver={handleIcon}>
-                    <li><IoLogoTwitter size={25}/></li>
+                <a href="https://twitter.com/DCodeshot" className="hover" target='blank' rel="noopener noreferrer" onMouseOver={handleIcon}>
+                    <li ><IoLogoTwitter size={25}/></li>
                 </a>
             </ul>            
         </div>

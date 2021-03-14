@@ -42,7 +42,7 @@ form {
             padding: 10px;
             background: none;
             color: $color-1;
-            font-family: $font-bold;
+            font-family: $font-2;
             font-size: 1.3rem;
             border: 1px solid $color-1;
             transition: color .2s;
@@ -58,7 +58,6 @@ form {
                 transition: all .3s;
             }
             &:hover {
-                cursor: pointer;
                 color: $black;
             }
             &:hover::after {

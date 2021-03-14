@@ -69,7 +69,7 @@ const Projects = () => {
                             projectList.projectName.map((project, i)=>{
                                 const id = "id";
                                 return (
-                                    <li key={i} data-index={i} className="">
+                                    <li key={i} data-index={i} className="hover">
                                         li 
                                         <span className="green">&nbsp; {id.split('').map((letter, i )=>{
                                                 return(
@@ -98,7 +98,7 @@ const Projects = () => {
                 <div className="infos-btn">
                     <span className="handFont">&lt;button&gt;</span>
                     <button
-                        className='btn-info'
+                        className='btn-info hover'
                         onClick= {()=>infosTrigger()}       
                     >
                     <span> </span>   

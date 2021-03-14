@@ -31,7 +31,7 @@ const DestrucBtn = props => {
 
     return (
         <button 
-            className="btn-contain" 
+            className="btn-contain hover" 
             onMouseOver={(e)=> handleHover(e)}
             onMouseLeave={(e)=> handleHover(e)}
         >
