@@ -24,8 +24,8 @@ const Home = () => {
             <ParametresBanner/>
             <h2>.Klipfel  Nicolas</h2>  
             <div className="container">   
-                <p className="sentence handFont">{language.language === "Shakespeare" ? homeDatas.en.sentence : homeDatas.fr.sentence}</p>                                  
-                <PeriodicSkills />        
+                <p className="sentence handFont hover hovTxt" data-txt="">{language.language === "Shakespeare" ? homeDatas.en.sentence : homeDatas.fr.sentence}</p>                                  
+                <PeriodicSkills />   
             </div> 
             <SocialNetwork/>
         </div>

@@ -28,7 +28,7 @@ const Contact = () => {
                             {language.language === "Shakespeare" ? en.title : fr.title }
                             <span> {language.language === "Shakespeare" ? en.span : fr.span }</span>
                         </h3>
-                        <p className="handFont">{language.language === "Shakespeare" ? en.p : fr.p }</p>
+                        <p className="handFont hover hovTxt">{language.language === "Shakespeare" ? en.p : fr.p }</p>
                     </div>
                     
                     <div className="formContains">

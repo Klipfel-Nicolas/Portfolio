@@ -116,9 +116,10 @@ const Projects = () => {
                             data-tilt-max-glare="0.5"
                         >        
                                 {Object.entries(projects).map((project, i)=>{
-                                    if(i == index){
+                                    if(i === index){
                                     return <ProjectInfos project={project[1]} key={i}/>   
-                                    }                               
+                                    } 
+                                    return null;                              
                                 })}
                         </div>
                     </div>    

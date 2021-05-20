@@ -6,8 +6,9 @@ const ParametresBanner = () => {
     useEffect(() => { 
         Array.from(document.querySelectorAll('.languages label')).map(label =>{
             if(label.id === language.language){
-                label.classList.add('lang-active')
+                return label.classList.add('lang-active')
             }
+            return null;
         })
       });
 
@@ -20,10 +21,10 @@ const ParametresBanner = () => {
         language.updateLanguage(e.target.value);
         
         Array.from(document.querySelectorAll('.languages label')).map(label =>{
-            if(label.id != language.language){
-                label.classList.add('lang-active')
+            if(label.id !== language.language){
+                return label.classList.add('lang-active')
             }else{
-                label.classList.remove('lang-active');
+                return label.classList.remove('lang-active');
             }
         })
    

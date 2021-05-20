@@ -1,37 +1,95 @@
-        .cursor {
-            pointer-events: none;
-            transform: translate(-50%, -50%);
-            position: absolute;
-            width: 1.5rem;
-            height: 1.5rem;
-            border-radius: 50%;
-            border: 1px solid $color-2;
-            z-index: 100;
-            transition: all 0.2s ease-in-out;
-            transition-property: background, transform, height, width;
-            span {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                text-align: center;
-                transform: translate(-50%, -50%);
-            }
-        }
-        
-        .hovered,
-        .hoveredText {
-            width: 4rem;
-            height: 4rem;
-            border: 2px $color-1;
-            z-index: 2500;
-        }
-        
-        .hovered {
-            border-style: solid;
-        }
-        
-        .hoveredText {
-            border-style: dashed;
-            color: $color-1;
-            padding: 40px;
-        }
+.cursor {
+    width: 25px;
+    height: 25px;
+    border: 1px solid $color-3;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    .cursorText {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 1px solid $color-1;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        opacity: 0;
+    }
+    &::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border: 8px solid $color-5;
+        border-radius: 50%;
+        opacity: .5;
+        top: -8px;
+        left: -8px;
+        animation: cursorAnim2 .5s infinite alternate;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid $color-2;
+}
+
+.hovered,
+.hoveredText,
+.tipsCursor {
+    border: none;
+    &::after {
+        border: none;
+    }
+    .cursorText {
+        opacity: 1;
+        transform: translate(-30%, -30%);
+    }
+}
+
+.hovered,
+.hoveredText {
+    animation: none;
+}
+
+.tipsCursor .cursorText {
+    text-align: center;
+    border: none;
+}
+
+.hoveredText .cursorText {
+    background-color: white;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}

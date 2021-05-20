@@ -1,16 +1,19 @@
 @font-face {
     font-family: "font-1";
     src: url(../assets/fonts/Alegra-Regular.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "font-2";
     src: url(../assets/fonts/Afronik.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "font-brand";
     src: url(../assets/fonts/Robertortiz.ttf);
+    font-display: swap;
 }
 
 @font-face {
@@ -41,7 +44,7 @@ $black: black;
     border: none;
     text-decoration: none;
     font-family: $font-1;
-    cursor: none;
+    cursor: url(../assets/img/cursorBlue.png), auto;
 }
 
 html {
@@ -76,8 +79,10 @@ a:visited {
 //CLASS
 .sentence.handFont {
     font-size: 1.6rem;
+    z-index: 3000;
     top: 15%;
     left: 20%;
+    height: 50px;
     position: absolute;
 }
 
@@ -92,6 +97,33 @@ a:visited {
     font-size: 1.3rem;
     color: #8a8686;
     opacity: .8;
+}
+
+.destrucBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    li {
+        z-index: 2;
+        padding: 4rem 0;
+        span {
+            display: inline-block;
+            letter-spacing: .5rem;
+            color: $color-1;
+            transition: all .2s ease-out;
+        }
+        &:hover {
+            span {
+                transform: translateY(0rem) !important;
+            }
+        }
+    }
+    li.active {
+        span {
+            transform: translateY(0rem) !important;
+            color: $color-2;
+        }
+    }
 }
 
 //Cursor

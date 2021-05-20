@@ -4,10 +4,10 @@ import { CSS3DObject, CSS3DRenderer } from 'three-css3drenderer';
 import TrackballControls from 'three-trackballcontrols';
 import { table } from "../data/languages-data";
 import * as TWEEN from 'tween.js'
-import DestrucBtn from './DestrucBtn';
+
+import BtnDestruc from './BtnDestruc';
 
 class PeriodicSkills extends Component {
-
 
     componentDidMount(){
         
@@ -132,21 +132,15 @@ class PeriodicSkills extends Component {
             }
             
             helix()
-    //GRID 
-            
-                for (let i =0 ; i<objects.length; i++ ) {
-    
+    //GRID            
+                for (let i =0 ; i<objects.length; i++ ) {   
                     const object = new THREE.Object3D();
             
                     object.position.x =  360  * ( i   % 3) - 350;
 	                object.position.y = -360  * ( ( i /  3 >> 0 ) % 3 ) + 350;
-	                object.position.z = -700  * ( i / 9 >> 0 );
-
-            
-                    targets.grid.push( object );
-                    
+	                object.position.z = -700  * ( i / 9 >> 0 );          
+                    targets.grid.push( object );                   
                 }
-
 
                 //RENDERER
                 renderer = new CSS3DRenderer();
@@ -226,19 +220,27 @@ class PeriodicSkills extends Component {
     
     }
     
+    handleClick = (e)=>{
+        e.target.parentNode.parentNode.querySelector('.active').classList.remove('active');
+        if(e.target.classList.contains('letter')){
+            e.target.parentNode.classList.add('active');
+        }else{
+            e.target.classList.add('active');
+        }
 
+    }
     render () {
         
         return (
             <>
-                <div id="periodic-container" className="hover hovTxt" data-txt="scroll & drag">
+                <div id="periodic-container" className="hover tips" data-txt="Drag And Scroll" >
     	     
                 </div>
-                <ul id="menu" >
-                    <li id="table" className="hover"><DestrucBtn word={"TABLE"}/></li>
-                    <li id="sphere"><DestrucBtn word={"SPHERE"}/></li>
-                    <li id="helix"><DestrucBtn word={"HELIX"}/></li>
-                    <li id="grid"><DestrucBtn word={"GRID"}/></li>
+                <ul id="menu" className="destrucBtn">
+                    <li id="table" className="hover active" onClick={(e)=>{this.handleClick(e)}} ><BtnDestruc word={"Table"}/></li>
+                    <li id="sphere" className="hover" onClick={(e)=>{this.handleClick(e)}}><BtnDestruc word={"Sphère"}/></li>
+                    <li id="helix" className="hover" onClick={(e)=>{this.handleClick(e)}}><BtnDestruc word={"Hélix"}/></li>
+                    <li id="grid" className="hover" onClick={(e)=>{this.handleClick(e)}}><BtnDestruc word={"Grid"}/></li>
                 </ul>
         </>
         )

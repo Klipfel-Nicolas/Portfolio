@@ -23,7 +23,7 @@ const About = () => {
 
     
     const language = useContext(LanguageContext);
-    const sentence = aboutDatas.sentence;
+    
     const { photo_1, photo_2, photo_3, photo_4, photo_5, photo_6, photo_7} = aboutDatas.photos;
     
     const handleClick = (e)=>{
@@ -50,8 +50,8 @@ const About = () => {
             <ParametresBanner/>
             <h2>{language.language === "Shakespeare" ? ".About" : ".A propos"}</h2> 
             <div className="container">
-                <p className="sentence handFont">{language.language === "Shakespeare" ? aboutDatas.sentence.en : aboutDatas.sentence.fr}</p>
-                <ul className="images-container" onClick={(e)=> handleClick(e)}>
+                <p className="sentence handFont hover hovTxt" data-txt="">{language.language === "Shakespeare" ? aboutDatas.sentence.en : aboutDatas.sentence.fr}</p>
+                <ul className="images-container hover tips " data-txt="Click On Photos" onClick={(e)=> handleClick(e)} >
                     <ArticleAbout  imageC={color1} height={30} name={'N'} firstName={'K'} infos={photo_1} />
                     <ArticleAbout  imageC={color2} height={40} name={'i'} firstName={'l'} infos={photo_2} />
                     <ArticleAbout  imageC={color3} height={50} name={'c'} firstName={'i'} infos={photo_3} />

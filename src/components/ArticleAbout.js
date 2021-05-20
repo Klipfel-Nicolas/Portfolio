@@ -7,7 +7,7 @@ const ArticleAbout = props => {
     const { imageC, height, name, firstName, infos} = props;
 
     return (
-        <li className="article-container hover hovTxt" data-txt="Click" style={{height: `${height}%`}} >
+        <li className="article-container" style={{height: `${height}%`}} >
             
             <div className="name">{name} </div> 
             <div className="article"style={{backgroundImage: `url(${imageC})`} }></div>

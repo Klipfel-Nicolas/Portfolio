@@ -43,10 +43,10 @@ const Skills = () => {
             <h2>{language.language === "Shakespeare" ? ".Skills" : ".Competences"}</h2> 
             
             <div className="container">
-                <p className="handFont sentence">{language.language === "Shakespeare" ? skillsDatas.en.global : skillsDatas.fr.global}</p>
+                <p className="handFont sentence hover hovTxt">{language.language === "Shakespeare" ? skillsDatas.en.global : skillsDatas.fr.global}</p>
                 
-                <div className="tabs-container">    
-                    <ul>
+                <div className="tabs-container ">    
+                    <ul className ="destrucBtn">
                         <li className="front-end active hover" onClick={(e)=> toggleTabs(e)}>
                             <BtnDestruc word={"Front-end"}/>
                         </li>
@@ -107,7 +107,7 @@ const Skills = () => {
                         </div>
 
                         <section className=" other">
-                            <ul>
+                            <ul >
                                 <IsometricBlock language={'GitHub'} icon={ SiGithub } color={"#000000"} number={5} />
                                 <li className="vertical "></li>
                                 <IsometricBlock language={'Gimp'} icon={ SiGimp } color={"#fff"} number={4} />

@@ -43,20 +43,12 @@
 //_____________ MENU _________________________________
 #menu {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 50%;
     left: 25%;
-    bottom: 2%;
+    height: 5rem;
+    bottom: 0;
     text-align: center;
-}
-
-button {
-    background-color: transparent;
-    color: rgba( 127, 255, 255, 0.75);
-    padding: 12px 24px;
-    span {
-        display: inline-block;
-        transition: all .3s;
+    align-items: center;
+    li {
+        height: 100%;
     }
 }
