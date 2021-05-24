@@ -22,7 +22,15 @@ const ParametresBanner = () => {
      */
     const toggleMenu = ()=>{
         let navMenu = document.querySelector('.navigation');
-        navMenu.classList.toggle('active')
+        navMenu.classList.toggle('active');
+        if(navMenu.classList.contains('active')){
+            document.querySelector('body').style.maxHeight = '100vh';
+            document.querySelector('body').style.overflow = 'hidden';
+        }
+        if(!navMenu.classList.contains('active')){
+            document.querySelector('body').style.maxHeight = 'auto';
+            document.querySelector('body').style.overflow = 'auto';
+        }
     }
 
     //LANGUAGE _____

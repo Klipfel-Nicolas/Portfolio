@@ -144,3 +144,44 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .about {
+        .images-container {
+            .article-container {
+                padding: 0 1%;
+                width: 12%;
+                .name,
+                .firstName {
+                    font-size: 1.5rem;
+                }
+                .name {
+                    top: -2rem
+                }
+                .firstName {
+                    bottom: -2rem;
+                }
+                .infos {
+                    .title {
+                        span {
+                            font-size: 3rem;
+                        }
+                    }
+                    .quotesBloc {
+                        width: 90%;
+                        top: 20%;
+                        .quote {
+                            width: 100%;
+                            font-size: .8rem;
+                            color: #ffff;
+                            line-height: 2rem;
+                        }
+                    }
+                }
+            }
+            .article-container.active {
+                width: 1000%;
+            }
+        }
+    }
+}

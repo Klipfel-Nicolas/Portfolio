@@ -11,6 +11,7 @@ form {
             background: none;
             color: $color-3;
             font-size: 1rem;
+            resize: none;
             &::placeholder {
                 color: $color-4;
             }
@@ -92,6 +93,21 @@ form {
             #not-mail.error {
                 display: block;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    form {
+        .coord-line {
+            .email-content {
+                #not-mail.error {
+                    display: none;
+                }
+            }
+        }
+        .form-message {
+            font-size: .8rem;
         }
     }
 }

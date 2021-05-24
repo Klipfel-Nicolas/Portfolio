@@ -157,3 +157,32 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .contact {
+        max-height: 100vh;
+        overflow: hidden;
+        .container {
+            margin-top: 10%;
+            .formBloc {
+                .formHeader {
+                    h3 {
+                        display: none;
+                    }
+                    .handFont {
+                        position: relative;
+                        z-index: 3000;
+                    }
+                }
+            }
+            .formContains {
+                .contactInfo {
+                    display: none;
+                }
+            }
+        }
+        .social-network {
+            width: 40%;
+        }
+    }
+}

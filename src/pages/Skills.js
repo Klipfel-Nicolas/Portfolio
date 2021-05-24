@@ -92,9 +92,9 @@ const Skills = () => {
                             <ul>
                                 <IsometricBlock language={'Firebase'} icon={ SiFirebase } color={"#ffcb2b"} number={6} />
                                 <li className="vertical "></li>
-                                <IsometricBlock language={'MySQL'} icon={ SiMysql} color={"#00758F"} number={1} />
+                                <IsometricBlock language={'MySQL'} icon={ SiMysql} color={"#00758F"} number={4} />
                                 <li className="vertical "></li>
-                                <IsometricBlock language={'Php'} icon={ SiPhp } color={"#8993be"} number={1} />
+                                <IsometricBlock language={'Php'} icon={ SiPhp } color={"#8993be"} number={6} />
                                 <li className="horizontal "></li>
                                 <IsometricBlock language={'Symfony'} icon={ SiSymfony } color={"#fff"} number={1} />
                             </ul>    

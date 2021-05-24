@@ -43,6 +43,7 @@
                     translateX: -100,
                     translateY: -100
                 };
+                
                 return {
                     translateX: -140,
                     translateY: -100
@@ -165,19 +166,20 @@
         }
 
         // Save the new Pieces instance
-        piecesSlider = new Pieces({
-            canvas: sliderCanvas,
-            items: items,
-            x: 'centerAll',
-            y: 'centerAll',
-            piecesSpacing: .5,
-            fontFamily: ["'Helvetica Neue', sans-serif"],
-            animation: {
-                duration: function() { return Pieces.random(1000, 2000); },
-                easing: 'easeOutQuint'
-            },
-            // debug: true
-        });
+            piecesSlider = new Pieces({
+                canvas: sliderCanvas,
+                items: items,
+                x: 'centerAll',
+                y: 'centerAll',
+                piecesSpacing: .5,
+                fontFamily: ["'Helvetica Neue', sans-serif"],
+                animation: {
+                    duration: function() { return Pieces.random(1000, 2000); },
+                    easing: 'easeOutQuint'
+                },
+                // debug: true
+            });
+        
 
         // Animate all numbers to rotate clockwise indefinitely
         piecesSlider.animateItems({
