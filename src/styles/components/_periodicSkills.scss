@@ -52,3 +52,31 @@
         height: 100%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    #periodic-container {
+        transform: translateX(-2%);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        overflow: hidden;
+    }
+    #menu {
+        left: 0%;
+        width: 100%;
+        li {
+            padding: 3rem 0rem;
+            margin: 0 5px;
+            flex: 1;
+            flex-wrap: nowrap;
+            background-color: rgba(0, 127, 127, 0.68);
+            border: 1px solid rgba(127, 255, 255, 0.25);
+            span {
+                font-size: .8rem;
+                letter-spacing: .2rem;
+            }
+        }
+    }
+}

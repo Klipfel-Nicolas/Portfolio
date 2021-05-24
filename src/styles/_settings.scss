@@ -29,7 +29,7 @@ $font-brand: "font-brand",
 cursive;
 $font-manuscrite: 'font-manuscrite',
 cursive;
-$color-1:rgb(102, 250, 211);
+$color-1:#66fad3;
 $color-2:#d49417;
 $color-3:rgba(255, 255, 255, 0.871);
 $color-4:#ffffff99;
@@ -77,6 +77,10 @@ a:visited {
 }
 
 //CLASS
+.mobile {
+    display: none;
+}
+
 .sentence.handFont {
     font-size: 1.6rem;
     z-index: 3000;
@@ -130,4 +134,37 @@ a:visited {
 //Cursor
 .hover {
     z-index: 2000;
+}
+
+@media screen and (max-width: 900px) {
+    h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .mobile {
+        display: block;
+    }
+    .container {
+        margin-left: 0;
+        width: 100vw;
+    }
+    .home {
+        padding: 2%;
+    }
+    .sentence.handFont {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+    .sentence.handFont {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
 }

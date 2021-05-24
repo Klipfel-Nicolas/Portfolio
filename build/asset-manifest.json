@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.87f30511.chunk.css",
+    "main.js": "/static/js/main.0550214f.chunk.js",
+    "main.js.map": "/static/js/main.0550214f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c012fedc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c012fedc.js.map",
+    "static/js/2.f6ba36b0.chunk.js": "/static/js/2.f6ba36b0.chunk.js",
+    "static/js/2.f6ba36b0.chunk.js.map": "/static/js/2.f6ba36b0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.87f30511.chunk.css.map": "/static/css/main.87f30511.chunk.css.map",
+    "static/js/2.f6ba36b0.chunk.js.LICENSE.txt": "/static/js/2.f6ba36b0.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/Robertortiz.28740654.ttf",
+    "static/media/bibliflix.1152abfb.png": "/static/media/bibliflix.1152abfb.png",
+    "static/media/colchis.b87a29dc.png": "/static/media/colchis.b87a29dc.png",
+    "static/media/color1.1b920b0a.jpg": "/static/media/color1.1b920b0a.jpg",
+    "static/media/color2.617eaa8e.jpg": "/static/media/color2.617eaa8e.jpg",
+    "static/media/color3.bcc5bf8a.jpg": "/static/media/color3.bcc5bf8a.jpg",
+    "static/media/color4.6ae9acae.jpg": "/static/media/color4.6ae9acae.jpg",
+    "static/media/color5.86ce199a.jpg": "/static/media/color5.86ce199a.jpg",
+    "static/media/color6.a2a04249.jpg": "/static/media/color6.a2a04249.jpg",
+    "static/media/color7.eb654f36.jpg": "/static/media/color7.eb654f36.jpg",
+    "static/media/sushi.3aecc2c3.png": "/static/media/sushi.3aecc2c3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c012fedc.js",
+    "static/js/2.f6ba36b0.chunk.js",
+    "static/css/main.87f30511.chunk.css",
+    "static/js/main.0550214f.chunk.js"
+  ]
+}

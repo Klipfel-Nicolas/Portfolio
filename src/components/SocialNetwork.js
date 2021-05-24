@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter} from 'react-icons/io';
 
 const SocialNetwork = () => {
 
+    useEffect(() => {
+        displayIcon();
+    })
+
+    /**
+     * mouse attraction icon
+     */
     const handleIcon = ()=>{
         
         const navLinks = document.querySelectorAll('.social-list a');
@@ -18,6 +25,17 @@ const SocialNetwork = () => {
                 link.style.transform = '';
             })
         })
+    }
+    
+    const displayIcon = ()=>{
+        if(window.innerWidth <= 500){
+            if(document.querySelector('.contact')){
+                document.querySelector('.social-network').style.display= 'block';
+            }else{
+                document.querySelector('.social-network').style.display= 'none';
+            }
+        }
+        
     }
     
 
