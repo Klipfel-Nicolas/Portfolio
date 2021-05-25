@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b0eb564.chunk.css",
-    "main.js": "/static/js/main.fa833235.chunk.js",
-    "main.js.map": "/static/js/main.fa833235.chunk.js.map",
+    "main.css": "/static/css/main.46996549.chunk.css",
+    "main.js": "/static/js/main.5e488ef4.chunk.js",
+    "main.js.map": "/static/js/main.5e488ef4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c012fedc.js",
     "runtime-main.js.map": "/static/js/runtime-main.c012fedc.js.map",
     "static/js/2.f6ba36b0.chunk.js": "/static/js/2.f6ba36b0.chunk.js",
     "static/js/2.f6ba36b0.chunk.js.map": "/static/js/2.f6ba36b0.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6b0eb564.chunk.css.map": "/static/css/main.6b0eb564.chunk.css.map",
+    "static/css/main.46996549.chunk.css.map": "/static/css/main.46996549.chunk.css.map",
     "static/js/2.f6ba36b0.chunk.js.LICENSE.txt": "/static/js/2.f6ba36b0.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/static/media/Robertortiz.28740654.ttf",
     "static/media/bibliflix.1152abfb.png": "/static/media/bibliflix.1152abfb.png",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.c012fedc.js",
     "static/js/2.f6ba36b0.chunk.js",
-    "static/css/main.6b0eb564.chunk.css",
-    "static/js/main.fa833235.chunk.js"
+    "static/css/main.46996549.chunk.css",
+    "static/js/main.5e488ef4.chunk.js"
   ]
 }

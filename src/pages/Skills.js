@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import Navigation from '../components/Navigation';
 
 import IsometricBlock from '../components/IsometricBlock';
@@ -18,8 +18,15 @@ const Skills = () => {
 
     const language = useContext(LanguageContext);
 
+    useEffect(() => {
+        if(!document.querySelector('.navigation').classList.contains('active')){
+            document.querySelector('body').style.maxHeight = 'auto';
+            document.querySelector('body').style.overflow = 'auto';
+        }
+    })
+
     const toggleTabs = (e)=>{
-        
+
         if(e.target.parentNode.classList.contains('active') || e.target.classList.contains('active')) return;
         document.querySelector('.tabs-container .active').classList.remove('active'); 
         document.querySelector('article.active').classList.remove('active');
