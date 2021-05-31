@@ -37,11 +37,15 @@
             translate: function() {
                 if (windowWidth > 1120) return {
                     translateX: 0,
-                    translateY: -100
+                    translateY: -20
                 };
                 if (windowWidth > 720) return {
-                    translateX: -100,
+                    translateX: 0,
                     translateY: -100
+                };
+                if (windowWidth < 500) return {
+                    translateX: 00,
+                    translateY: -80
                 };
                 
                 return {
@@ -73,11 +77,15 @@
         translate: function() {
             if (windowWidth > 1120) return {
                 translateX: 0,
-                translateY: 200
+                translateY: 330
             };
             if (windowWidth > 720) return {
                 translateX: 0,
                 translateY: 200
+            };
+            if (windowWidth < 500) return {
+                translateX: 00,
+                translateY: 300
             };
             return {
                 translateX: 0,
@@ -109,11 +117,11 @@
         translate: function() {
             if (windowWidth > 1120) return {
                 translateX: 300,
-                translateY: -380
+                translateY: -300
             };
             if (windowWidth > 720) return {
-                translateX: -440,
-                translateY: -380
+                translateX: 50,
+                translateY: -250
             };
             return {
                 translateX: -140,

@@ -1,5 +1,6 @@
 .home {
-    height: 100vh;
+    //height: 100vh;
+    //overflow: hidden;
     .container {
         .technos {
             ul {
@@ -9,6 +10,11 @@
                 transform: skew(5deg);
                 grid-column: 2/3;
                 grid-row: 1;
+            }
+        }
+        .destrucBtn {
+            li {
+                padding: 0rem;
             }
         }
     }

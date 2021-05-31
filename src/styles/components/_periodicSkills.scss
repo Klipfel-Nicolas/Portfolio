@@ -72,12 +72,15 @@
             margin: 0 5px;
             flex: 1;
             flex-wrap: nowrap;
-            background-color: rgba(0, 127, 127, 0.68);
-            border: 1px solid rgba(127, 255, 255, 0.25);
+            border: 1px solid rgba( 127, 255, 255, 0.75);
+            border-radius: 5px;
             span {
                 font-size: .8rem;
                 letter-spacing: .2rem;
             }
+        }
+        li.active {
+            border: 1px solid rgba(127, 255, 255, 0.25);
         }
     }
 }

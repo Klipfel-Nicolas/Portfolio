@@ -31,7 +31,7 @@
                 background-position: center;
                 background-size: cover;
                 transition: all .4s;
-                border: 2px solid $color-3;
+                //border: 2px solid $color-3;
                 -webkit-filter: grayscale(100%);
                 /* Pour les navigateurs Chrome, Safari, Opera */
                 filter: grayscale(100%);
@@ -48,7 +48,7 @@
                     transition: all .5s ease-out;
                 }
                 &:hover {
-                    border: none;
+                    //border: none;
                 }
             }
             .infos {
@@ -98,7 +98,6 @@
                 width: 100%;
                 .article {
                     width: 100%;
-                    border: 0px;
                     -webkit-filter: grayscale(0%);
                     filter: grayscale(0%);
                 }
@@ -112,8 +111,7 @@
         .article-container.active {
             width: 100%;
             .article {
-                width: 80%;
-                border: 0px;
+                transform: scale(.9);
                 -webkit-filter: grayscale(0%);
                 filter: grayscale(0%);
                 &::before {
@@ -122,7 +120,7 @@
             }
             .name,
             .firstName {
-                display: none;
+                opacity: 0;
             }
             .infos {
                 .title {
@@ -151,6 +149,7 @@
             .article-container {
                 padding: 0 1%;
                 width: 12%;
+                transition: all .3s;
                 .name,
                 .firstName {
                     font-size: 1.5rem;

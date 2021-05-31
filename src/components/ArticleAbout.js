@@ -4,13 +4,13 @@ import LanguageContext from '../components/LanguageContext';
 const ArticleAbout = props => {
         
     const language = useContext(LanguageContext);
-    const { imageC, height, name, firstName, infos} = props;
+    const {imageMin, imageC, height, name, firstName, infos} = props;
 
     return (
         <li className="article-container" style={{height: `${height}%`}} >
             
             <div className="name">{name} </div> 
-            <div className="article"style={{backgroundImage: `url(${imageC})`} }></div>
+            <div className="article"style={{backgroundImage: window.innerWidth > 500 ? `url(${imageC})` : `url(${imageMin})`} }></div>
             <div className="firstName">{firstName}</div>    
                     
             <div className="infos">

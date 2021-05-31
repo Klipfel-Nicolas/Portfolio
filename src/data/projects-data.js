@@ -1,68 +1,72 @@
 import colchis from '../assets/img/colchis.png';
-import sushi from '../assets/img/sushi.png';
-import bibliflix from '../assets/img/bibliflix.png'
+import strassHelp from '../assets/img/strassHelp.png';
+import hackathon from '../assets/img/hackathon.png'
 
 
 export const projectList = {
-    projectName : ["Kingdom of Colchis", "SushiBar", "Biblifix"]
+    projectName : ["Kingdom of Colchis", "StrassHelp", "Hackathon 1st"]
 }
 
 export const projects = {
     project0 :{ 
         number : 1,
         title : "Kingdom of Colchis",
-        technos : "JS Vanilla-localStorage",
+        technos : "-JS Vanilla -localStorage",
         image : colchis,
+        github : 'https://github.com/Klipfel-Nicolas/Kingdom-of-Colchis',
         description : {
             fr : {
                 p1:"Site officiel du Royaume de Colchis.",
-                p2:"7 clicks cachés protègent le trésor du Roi, saurez-vous les retrouver.",
-                p3:"Accompagné par le localStorage pour mémoriser les click découvert même après avoir quitté le royaume, il vous faudra beaucoup de patience et de malice !"
+                p2:"Site factice proposant un jeu, retrouver les 7 clicks caché pour gagner le trésor du roi, saurez-vous les retrouver.",
+                p3:" -Tech challenge pour mon entrée en formation."
             },
             en : {
                 p1:"Official site of the Kingdom of Colchis.",
-                p2:"7 hidden clicks protect the King's treasure, will you be able to find them.",
-                p3:"Accompanied by the localStorage to memorize the clicks discovered even after leaving the kingdom, you will need a lot of patience and mischief!"
+                p2:"Dummy site offering a game, find the 7 hidden clicks to win the king's treasure, will you be able to find them.",
+                p3:"-Tech challenge for my entry to school."
             },
+            
             color : '#ffff'
         },
     },
     project1 :{ 
         number : 2,
-        title : "SushiBar",
-        technos : "JS Vanilla-animations",
-        image : sushi,
+        title : "StrassHelp",
+        technos : "-PHP -POO -MVC",
+        image : strassHelp,
+        github : 'https://github.com/Klipfel-Nicolas/strassHelp',
         description : {
             fr : {
-               p1: "Site pour restaurant japonais",
-               p2: "Véritable sparing partner, ce site m'as permis de découvrir, m'exercer et progresser sur JavaScript et notamment les animations",
-               p3: "Au programme, parallaxes, hover, transition etc... Le tout sans librairie"
+               p1: "Pateforme d'entraide communautaire",
+               p2: "StrassHelp est un site d'échange de service et permet de mettre en relation des particuliers afin de profiter ou de faire profiter de ces compétences.",
+               p3: "-Projet fictif développé en équipe à 3, en méthode agile SCRUM"
             },
             en : {
-                p1: "Japanese restaurant website",
-                p2: "Real sparing partner, this site allowed me to discover, practice and progress on JavaScript and in particular animations",
-                p3: "Parallaxes, hover, transition etc ... All without library"
+                p1: "Community support platform",
+                p2: "StrassHelp is a service exchange site and allows individuals to connect in order to benefit or share these skills.",
+                p3: "-Fictitious project developed in a team of 3, using the agile SCRUM method"
              },
-            color : '#ffff'
+            color : 'black'
         },
     },
     project2 :{ 
         number : 3,
-        title : "Bibliflix",
-        technos : "React-Redux-Bootstrap-Firebase",
-        image : bibliflix,
+        title : "Hackathon 1st",
+        technos : "-Php -API -Three.js",
+        image : hackathon,
+        github : 'https://github.com/Klipfel-Nicolas/Hackathon-Nasa',
         description : {
             fr : {
-                p1: "Blog de lecture",
-                p2: "Developper avec React et Redux, aidé de bootsrap pour crée un MVP, firebase pour l'authentification et la base de données.",
-                p3: "Ce projet est en cours de développement."
+                p1: "Découverte photo de la planète Mars",
+                p2: "Mars discovery est un site proposant de découvrir Mars grâce aux photos proposer par les robots de la NASA présent sur la planète",
+                p3: "Projet réalisé à 3 en 24 heures sur le thème de l'API de la Nasa"
              },
              en : {
-                p1: "Reading blog",
-                p2: "Developed with React and Redux, helped by bootsrap to create an MVP, firebase for authentication and the database.",
-                p3: "This project is under development."
+                p1: "Photo discovery of the planet Mars",
+                p2: "Mars discovery is a site offering to discover Mars thanks to the photos proposed by the NASA robots present on the planet",
+                p3: "Project carried out at 3 in 24 hours on the theme of the NASA API"
              },
-            color : 'black'
+            color : '#ffff'
         },
     }
 

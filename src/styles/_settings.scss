@@ -63,7 +63,7 @@ body {
 .skills,
 .works,
 .contact {
-    padding: 2% 5%;
+    padding: 0 5%;
 }
 
 h2 {
@@ -95,6 +95,7 @@ a:visited {
     margin-left: 10vw;
     width: 85vw;
     height: 90vh;
+    overflow: hidden;
 }
 
 .handFont {
@@ -117,9 +118,11 @@ a:visited {
             color: $color-1;
             transition: all .2s ease-out;
         }
-        &:hover {
-            span {
-                transform: translateY(0rem) !important;
+        @media screen and (min-width: 600px) {
+            &:hover {
+                span {
+                    transform: translateY(0rem) !important;
+                }
             }
         }
     }
@@ -147,6 +150,7 @@ a:visited {
     .container {
         margin-left: 0;
         width: 96vw;
+        overflow: visible;
     }
     .home,
     .about,

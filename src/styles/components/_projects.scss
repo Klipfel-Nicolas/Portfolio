@@ -41,7 +41,7 @@
 .js .pieces-slider__canvas {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     transition: 0.2s opacity;
 }
 
@@ -295,6 +295,18 @@
                         font-family: $font-1;
                         -webkit-text-stroke: 4px rgba(0, 0, 0, 0.2);
                     }
+                    h6 {
+                        font-size: 1.5rem;
+                        margin-left: 30%;
+                    }
+                    a {
+                        width: 150px;
+                        padding: 5px;
+                        border-radius: 5px;
+                        margin-left: 30%;
+                        color: $color-1;
+                        background-color: black;
+                    }
                     .technos {
                         font-size: 4rem;
                         color: $color-2;
@@ -322,19 +334,52 @@
 
 /* Media queries with styles for smaller screens */
 
+@media screen and (max-width: 1120px) {
+    .pieces-slider__image {
+        max-width: 300px;
+    }
+    .projects-list {
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        ul {
+            z-index: 9;
+            li {
+                [data-letter] {
+                    opacity: 1;
+                }
+            }
+            [data-index] {
+                .green,
+                .white,
+                .yellow {
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 720px) {
     .pieces-slider__image {
         max-width: 300px;
     }
-}
-
-@media screen and (max-width: 55em) {
-    .pieces-slider__canvas {
-        width: 100vw;
-        height: 100vw;
-    }
-    .pieces-slider__button {
-        width: 60px;
-        height: 60px;
+    .projects-list {
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        ul {
+            z-index: 9;
+            li {
+                [data-letter] {
+                    opacity: 1;
+                }
+            }
+            [data-index] {
+                .green,
+                .white,
+                .yellow {
+                    position: relative;
+                }
+            }
+        }
     }
 }

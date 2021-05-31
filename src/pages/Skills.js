@@ -19,9 +19,13 @@ const Skills = () => {
     const language = useContext(LanguageContext);
 
     useEffect(() => {
-        if(!document.querySelector('.navigation').classList.contains('active')){
-            document.querySelector('body').style.maxHeight = 'auto';
-            document.querySelector('body').style.overflow = 'auto';
+
+        /**
+         * responsive
+         */
+        if(!document.querySelector('.navigation').classList.contains('active') && window.innerWidth < 720){
+            document.querySelector('body').style.maxHeight = '100%';
+            document.querySelector('body').style.overflow = 'scroll';
         }
     })
 
