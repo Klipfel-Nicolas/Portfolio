@@ -142,6 +142,10 @@ export const skillsDatas ={
             title: "Back-End",
             p : "Pour la partie Back-end, j'utilise PHP et son framework Symfony, ainsi que MySQL.  Pour les petits projets rapides je travailles avec firebase."
         },
+        library:{
+            title: "librairies",
+            p : "Je travaille avec plusieurs librairies pour un gain de temps, notamment pour la 3D avec Three.js et les animations avec Gsap."
+        },
         other:{
             title: "autre",
             p : "J’utilise git et github pour versionner mes projets, Inkscape et gimp pour les créations graphique et travailler sur mes designs."
@@ -157,6 +161,10 @@ export const skillsDatas ={
             title: "Back-End",
             p : " For the Back-end part, I use PHP and its framework Symfony. For small quick projects I work with firebase."
         }, 
+        library:{
+            title: "Library",
+            p : "I work with several libraries to save time, especially for 3D with Three.js and animations with Gsap."
+        },
         other:{
             title: "other",
             p : "I use git and github to version my projects, Inkscape and gimp for graphics and work on my designs."
@@ -206,8 +214,8 @@ export const table = [
     "Redux", "Redux", "library", 8, 3,
     "_LO", "Lodash", "library", 9, 3,
     "npm", "Node Package Manager", "package manager", 10, 3,
-    "Php 7", "Hypertext Preprocessor", "language", 10, 4,
-    "Sf 4", "Symfony", "framework", 8, 4,
+    "Php", "Hypertext Preprocessor", "language", 10, 4,
+    "Symfony", "Symfony", "framework", 8, 4,
     "Twig", "Twig", "template engine", 6, 4,
     "ApiPlatform", "ApiPlatform", "api creater", 5, 4,
     "MVC", "Model Vue Controller", "design pattern", 3, 4,

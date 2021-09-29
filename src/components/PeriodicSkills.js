@@ -129,7 +129,7 @@ class PeriodicSkills extends Component {
                     if(window.innerWidth <= 500){
                         object.position.y = -( i * 15 ) + 350;
                     }else{
-                        object.position.y = -( i * 15 ) + 50;
+                        object.position.y = -( i * 15 ) + 150;
                     }
                     object.position.z = 800  * Math.cos( phi + Math.PI );
 
