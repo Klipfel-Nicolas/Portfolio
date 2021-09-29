@@ -39,7 +39,13 @@ class PeriodicSkills extends Component {
             scene = new THREE.Scene();
             
             camera = new THREE.PerspectiveCamera( felidView, aspect, nearPlane, farPlane);
-            camera.position.z = 1500;
+            
+            if(window.innerWidth <= 500){
+                camera.position.z = 3500;
+            }else{
+               camera.position.z = 2000; 
+            }
+            
        
         //ELEMENTS
         
@@ -74,10 +80,13 @@ class PeriodicSkills extends Component {
                 //TABLE
 
                 const object = new THREE.Object3D();
-                object.position.x = table[i + 3] * 140 - (width/3); 
+                object.position.x = table[i + 3] * 140 - (width/2); 
                 object.position.y = -table[i + 4] * 180 + (height/1.5); 
                 object.position.z = 0;
-
+                if(window.innerWidth <= 500){
+                    object.position.x = table[i + 3] * 140 - (width*2);
+                    object.position.y = -table[i + 4] * 180 + (height*1.2); 
+                }
                 targets.table.push(object);
             } 
 
@@ -98,12 +107,13 @@ class PeriodicSkills extends Component {
                     object.position.x = 800 * Math.cos( theta ) * Math.sin( phi );
                     object.position.y = 800 * Math.sin( theta ) * Math.sin( phi ); 
                     object.position.z = 800 * Math.cos( phi );
-
+                    
                     //rotation object
 
                     vector.copy( object.position ).multiplyScalar(2);
                     object.lookAt( vector );
                     targets.sphere.push( object );
+                    
                 }
             }
             sphere()
@@ -116,13 +126,18 @@ class PeriodicSkills extends Component {
                     let phi = i * 0.739 + Math.PI;
                     const object = new THREE.Object3D();
                     object.position.x = 800  * Math.sin( phi );
-                    object.position.y = -( i * 8 ) + 50;
+                    if(window.innerWidth <= 500){
+                        object.position.y = -( i * 15 ) + 350;
+                    }else{
+                        object.position.y = -( i * 15 ) + 50;
+                    }
                     object.position.z = 800  * Math.cos( phi + Math.PI );
-            
+
                     object.scale.set( 1.1, 1.1, 1.1 );
             
-                    vector.x = object.position.x * 2;
+                    vector.x = object.position.x * 2;    
                     vector.y = object.position.y;
+                    vector.y = object.position.y;  
                     vector.z = object.position.z * 2;
             
                     object.lookAt( vector );
@@ -152,7 +167,7 @@ class PeriodicSkills extends Component {
                 controls = new TrackballControls( camera, renderer.domElement );
 				controls.rotateSpeed = 2;
 				controls.minDistance = 1000;
-				controls.maxDistance = 4000;
+				controls.maxDistance = 5000;
 				controls.addEventListener( 'change', render );
 
             const gridBtn = document.getElementById('grid');

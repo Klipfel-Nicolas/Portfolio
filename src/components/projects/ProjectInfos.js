@@ -16,13 +16,13 @@ const ProjectInfos = props => {
                     {
                         language.language === "Shakespeare" ? (
                             <>
-                                <h6 style={{color :`${description.color}`}}>
+                                <h6 style={window.innerWidth > 1100 ? {color :`${description.color}`} : {color :'#ffff'}}>
                                     {description.en.p1} 
                                 </h6>
                                 
                                 <a href={github} target="blank" className="hover" ><IoLogoGithub size={20}/> -Voir sur Github</a>
                                 
-                                <p className="description" style={{color :`${description.color}`}}>{description.en.p2} <br /> {description.en.p3}</p>
+                                <p className="description" style={window.innerWidth > 1100 ? {color :`${description.color}`} : {color :'#ffff'}}>{description.en.p2} <br /> {description.en.p3}</p>
                                 
                                 <p className="technos">{technos}</p> 
                             </>

@@ -14,7 +14,7 @@ const BtnDestruc = props => {
                     <span 
                         key={i} 
                         className='letter'
-                        style={{transform : `translateY(${Math.floor(Math.random()* 5 + -3)}rem)`}}
+                        style={{transform : `translateY(${Math.floor(Math.random()* 5 + -2)}rem)`}}
                     >
                         {letter}
                     </span>

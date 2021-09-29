@@ -84,8 +84,8 @@ const Skills = () => {
                                 <IsometricBlock language={'Css 3'} icon={ DiCss3Full } color={"#2187d2"} number={8} />
                                 <li className="horizontal"></li>
                                 <li className="vertical "></li>
-                                <IsometricBlock language={'sass'} icon={ DiSass } color={'#c14e88'} number={6} />
-                                <IsometricBlock language={'Javascript'} icon={ DiJavascript} color={"yellow"} number={7} />
+                                <IsometricBlock language={'sass'} icon={ DiSass } color={'#c14e88'} number={7} />
+                                <IsometricBlock language={'Javascript'} icon={ DiJavascript} color={"yellow"} number={8} />
                                 <li className="horizontal "></li>
                                 <IsometricBlock language={'React'} icon={ DiReact } color={"#53d2fa"} number={6} />
                                 <li className="vertical "></li>
@@ -101,13 +101,13 @@ const Skills = () => {
 
                         <section className=" back-end">
                             <ul>
-                                <IsometricBlock language={'Firebase'} icon={ SiFirebase } color={"#ffcb2b"} number={6} />
+                                <IsometricBlock language={'Firebase'} icon={ SiFirebase } color={"#ffcb2b"} number={5} />
                                 <li className="vertical "></li>
                                 <IsometricBlock language={'MySQL'} icon={ SiMysql} color={"#00758F"} number={4} />
                                 <li className="vertical "></li>
                                 <IsometricBlock language={'Php'} icon={ SiPhp } color={"#8993be"} number={6} />
                                 <li className="horizontal "></li>
-                                <IsometricBlock language={'Symfony'} icon={ SiSymfony } color={"#fff"} number={1} />
+                                <IsometricBlock language={'Symfony'} icon={ SiSymfony } color={"#fff"} number={6} />
                             </ul>    
                         </section>
                     </article>

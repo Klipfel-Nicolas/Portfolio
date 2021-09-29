@@ -146,6 +146,10 @@ a:visited {
     }
     .mobile {
         display: block;
+        span {
+            font-size: 1.4rem;
+            color: $color-1;
+        }
     }
     .container {
         margin-left: 0;
@@ -171,8 +175,17 @@ a:visited {
         font-size: 1.2rem;
     }
     .sentence.handFont {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 20px 0;
         line-height: 1rem;
+    }
+}
+
+
+/* smartphones, touchscreens */
+
+@media (hover: none) and (pointer: coarse) {
+    .cursor {
+        display: none;
     }
 }

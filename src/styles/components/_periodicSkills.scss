@@ -45,11 +45,12 @@
     position: absolute;
     left: 25%;
     height: 5rem;
-    bottom: 0;
+    bottom: 2rem;
     text-align: center;
     align-items: center;
     li {
         height: 100%;
+        padding: 2rem 0;
     }
 }
 
@@ -72,7 +73,7 @@
             margin: 0 5px;
             flex: 1;
             flex-wrap: nowrap;
-            border: 1px solid rgba( 127, 255, 255, 0.75);
+            border: 1px solid rgba(127, 255, 255, 0.25);
             border-radius: 5px;
             span {
                 font-size: .8rem;
@@ -80,7 +81,7 @@
             }
         }
         li.active {
-            border: 1px solid rgba(127, 255, 255, 0.25);
+            border: transparent;
         }
     }
 }

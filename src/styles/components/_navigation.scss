@@ -126,8 +126,10 @@
         .navList {
             span.handFont {
                 text-align: center;
+                font-size: 1.5rem;
             }
             ul {
+                height: 70%;
                 a {
                     &::before {
                         left: -20%;
@@ -139,6 +141,7 @@
                         }
                         [data-letter] {
                             opacity: 1;
+                            font-size: 1.3rem;
                         }
                     }
                 }
