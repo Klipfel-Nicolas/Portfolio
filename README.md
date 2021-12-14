@@ -1,5 +1,7 @@
 # Portfolio
 
+![Cover](https://github.com/Klipfel-Nicolas/Portfolio/blob/main/src/assets/img/cover.png)
+
 ## Description
 
 This repository is a simple React structure from scratch.
