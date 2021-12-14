@@ -9,7 +9,7 @@ Il présente mon parcours dans le développement web, mes centres d'intérêts e
 
 N'hésitez pas à y faire un tour et à me laisser un retour d'expérience par mail ou autres.
 
-[Nicolas Klipfel](https://nicolas-klipfel.fr/)
+[![Portfolio](https://img.shields.io/badge/Par%20içi%20-Portfolio-15d8a4?style=for-the-badge&logo=pinboard&logoColor=white)](https://nicolas-klipfel.fr/)
 
 Merci
 
