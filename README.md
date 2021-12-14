@@ -7,7 +7,9 @@
 Ce projet est un portfolio pour mettre en avant mes connaissances et compétences ainsi qu'un peu de ma personnalité.
 Il présente mon parcours dans le développement web, mes centres d'intérêts et ce que je recherche.
 
-N'hésitez pas à faire un tour et à me laisser un retour d'expérience par mail ou autres.
+N'hésitez pas à y faire un tour et à me laisser un retour d'expérience par mail ou autres.
+
+[Nicolas Klipfel](https://nicolas-klipfel.fr/)
 
 Merci
 
