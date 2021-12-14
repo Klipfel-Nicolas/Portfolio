@@ -142,6 +142,10 @@ export const skillsDatas ={
             title: "Back-End",
             p : "Pour la partie Back-end, j'utilise PHP et son framework Symfony, ainsi que MySQL.  Pour les petits projets rapides je travailles avec firebase."
         },
+        library:{
+            title: "librairies",
+            p : "Je travaille avec plusieurs librairies pour un gain de temps, notamment pour la 3D avec Three.js et les animations avec Gsap."
+        },
         other:{
             title: "autre",
             p : "J’utilise git et github pour versionner mes projets, Inkscape et gimp pour les créations graphique et travailler sur mes designs."
@@ -157,6 +161,10 @@ export const skillsDatas ={
             title: "Back-End",
             p : " For the Back-end part, I use PHP and its framework Symfony. For small quick projects I work with firebase."
         }, 
+        library:{
+            title: "Library",
+            p : "I work with several libraries to save time, especially for 3D with Three.js and animations with Gsap."
+        },
         other:{
             title: "other",
             p : "I use git and github to version my projects, Inkscape and gimp for graphics and work on my designs."
@@ -188,21 +196,35 @@ export const formDatas ={
 
 export const table = [
     "Html", "Hyper Text Markup", "language", 1, 1,
-    "Css", "Cascading Style Sheets", "language", 5, 1,
-    "JS", "Javascript", "language", 1, 2,
-    "React", "React", "library", 2, 2,
-    "Redux", "Redux", "library", 3, 2,
-    "Scss", "Syntactically Cascading Style Sheets", "preprocessor", 5,2,
-    "_LO", "Lodash", "library", 1, 3,
-    "Three", "Three", "library", 2, 3,
-    "{B}", "Bootsrap", "library", 4, 3,
-    "MUI", "Material-UI", "library", 5, 3,
-    "npm", "Node Package Manager", "package manager", 1, 4,
-    "Git", "Git", "version control", 3, 4,
-    "GitHub", "GitHub", "version control platform", 4, 4,
-    "Firebase", "Firebase", "plateform", 5, 4,
-    "Inks", "Inkscape",  "graphics editor", 1,5,
-    "GIMP", "GNU Image Manipulation Program", "Image Editor", 2, 5,
-    "VS-code", "Visual Studio", "code editor", 5, 5
-    
+    "VS-code", "Visual Studio", "code editor", 3, 1,
+    "Css", "Cascading Style Sheets", "language", 10, 1,
+    "Inks", "Inkscape",  "graphics editor", 1,2,
+    "GIMP", "GNU Image Manipulation Program", "Image Editor", 2, 2,
+    "Figma", "Figma", "interface design tool.", 3, 2,
+    "GSAP", "Greensocks", "library", 5, 2,
+    "Scss", "Syntactically Cascading Style Sheets", "preprocessor", 7, 2,
+     "{B}", "Bootsrap", "library", 8, 2,
+    "Tailwind", "Tailwind", "library", 9, 2, 
+    "MUI", "Material-UI", "library", 10, 2,
+    "JS", "Javascript", "language", 1, 3,
+    "Vue", "Vue.js", "framework", 3, 3,
+    "React", "React", "framework", 4, 3,
+    "Node", "Node.js", "runtime built", 5, 3,
+    "Three", "Three.js", "library", 7, 3,
+    "Redux", "Redux", "library", 8, 3,
+    "_LO", "Lodash", "library", 9, 3,
+    "npm", "Node Package Manager", "package manager", 10, 3,
+    "Php", "Hypertext Preprocessor", "language", 10, 4,
+    "Symfony", "Symfony", "framework", 8, 4,
+    "Twig", "Twig", "template engine", 6, 4,
+    "ApiPlatform", "ApiPlatform", "api creater", 5, 4,
+    "MVC", "Model Vue Controller", "design pattern", 3, 4,
+    "POO", "Programation Orienté Objet", "programming paradigm", 2, 4,
+    "SQL", "Structured Query Language", "language", 1, 5,
+    "MySQL", "MySQL", "database management system", 2,5,
+    "noSQL", "No Structured Query Language", "language", 4, 5,
+    "MongoDB", "MongoDb", "database management system", 5,5,
+    "Firebase", "Firebase", "plateform", 7, 5,
+    "Git", "Git", "version control", 9, 5,
+    "GitHub", "GitHub", "version control platform", 10, 5, 
 ]

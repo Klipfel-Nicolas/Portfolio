@@ -6,7 +6,7 @@ const Mouse = () => {
     useEffect(() => {
         
         const cursor = document.querySelector('.cursor');
-        const mouseTxt = cursor.querySelector('.cursorText');
+        const innerCursor = cursor.querySelector('.inner-cursor');
         
         const handleHover = (link) =>{
             
@@ -16,10 +16,10 @@ const Mouse = () => {
                     break;
                 case link.classList.contains('tips'):
                     cursor.classList.add('tipsCursor');   
-                    mouseTxt.textContent = link.dataset.txt;
+                    innerCursor.textContent = link.dataset.txt;
                     break;
                 default:
-                    cursor.classList.add('hovered');   
+                    cursor.classList.add('hovered');
                     break;
             }
             
@@ -28,26 +28,37 @@ const Mouse = () => {
             if(cursor.classList.contains('hovered'))cursor.classList.remove('hovered');
             if(cursor.classList.contains('hoveredText'))cursor.classList.remove('hoveredText');
             if(cursor.classList.contains('tipsCursor'))cursor.classList.remove('tipsCursor');
-            mouseTxt.textContent = '';
+            innerCursor.textContent = '';
         }
-        //expand Click
-        const handleClick = () =>{
-            cursor.classList.add('expand');
-                setTimeout(()=>{
-                    cursor.classList.remove("expand");
-                },500);
-        }
-        document.addEventListener('click', handleClick)
+        
+       
         //position
-        document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", `top:${e.pageY - 10}px; left : ${e.pageX - 10}px;`);
-            cursor.addEventListener('click', ()=>{
-                cursor.classList.add('expand');
-                setTimeout(()=>{
-                    cursor.classList.remove("expand");
-                },500);
-            })
-        })
+
+        // set the starting position of the cursor outside of the screen
+        let clientX = -100;
+        let clientY = -100;
+        
+
+        const initCursor = () => {
+        // add listener to track the current mouse position
+        document.addEventListener("mousemove", e => {
+            clientX = e.clientX;
+            clientY = e.clientY;
+            
+        });
+        
+        // transform the cursor to the current mouse position
+        // use requestAnimationFrame() for smooth performance
+        const render = () => {
+            cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+            
+            requestAnimationFrame(render);
+        };
+        requestAnimationFrame(render);
+        };
+
+        initCursor();
+
        
            
         document.querySelectorAll('.hover').forEach(link =>{
@@ -63,8 +74,8 @@ const Mouse = () => {
     
     return (
         
-        <div className="cursor" >
-            <div className="cursorText ">
+        <div className="cursor cursor--outline">
+            <div className="inner-cursor ">
 
             </div>
         </div>

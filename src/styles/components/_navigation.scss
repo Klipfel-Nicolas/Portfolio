@@ -111,3 +111,44 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .navigation {
+        width: 100vw;
+        height: 100vh;
+        background-color: $black;
+        z-index: 10;
+        transform: translateX(-200vw);
+        transition: transform .5s cubic-bezier(0.51, -0.03, 0.65, 1.04);
+        .brand {
+            text-align: center;
+        }
+        .navList {
+            span.handFont {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            ul {
+                height: 70%;
+                a {
+                    &::before {
+                        left: -20%;
+                    }
+                    li {
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                        [data-letter] {
+                            opacity: 1;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navigation.active {
+        transform: translateX(0);
+    }
+}

@@ -37,11 +37,11 @@
                 background-color: $color-2;
             }
         }
-        label {
+        .langContain {
+            position: relative;
             color: $color-1;
             display: inline-block;
             overflow: hidden;
-            position: relative;
             margin-left: 5%;
             padding: 1%;
             input {
@@ -88,6 +88,51 @@
             &::after {
                 right: 0;
                 transform: translateX(100%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .parametresBanner {
+        margin-left: 0;
+        &::before {
+            display: none;
+        }
+        .mobile.navBtn {
+            grid-column: 1/2;
+            padding: 5%;
+            z-index: 100;
+        }
+        h1 {
+            grid-column: 2 / 3;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .parametresBanner {
+        grid-template-columns: repeat(9, 1fr);
+        .mobile.navBtn {
+            grid-column: 1/3;
+        }
+        h1 {
+            font-size: .8rem;
+            grid-column: 3/8;
+            font-size: 1.2rem;
+        }
+        .languages {
+            grid-column: 8/10;
+            font-size: .8rem;
+            justify-content: stretch;
+            p {
+                &::before {
+                    display: none;
+                }
+            }
+            #Shakespeare::after,
+            #Moliere::after {
+                display: none;
             }
         }
     }

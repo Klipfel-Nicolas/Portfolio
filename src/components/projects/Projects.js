@@ -10,11 +10,17 @@ const Projects = () => {
     const [index, setIndex] = useState(0)
     
     const { project0, project1, project2} = projects;
-    
+    const projectArray = [project0, project1, project2];
+    console.log(projectArray[index])
     const infosTrigger = ()=>{
+        //index project
+        const currentIndex = document.querySelector('.projects-list .active').dataset.index;
+        setIndex(currentIndex);
+
         const infosDiv = document.querySelector('.infos-project');
         const listProject = document.querySelector('.projects-list ul');
         const btnInfos = document.querySelector('.btn-info');
+        
         
         infosDiv.classList.toggle('active');
         btnInfos.classList.toggle('active');
@@ -25,12 +31,7 @@ const Projects = () => {
         listProject.addEventListener('click', ()=> btnInfos.classList.remove('active'));
         window.addEventListener('keydown', ()=> btnInfos.classList.remove('active'));
         window.addEventListener('wheel', ()=> btnInfos.classList.remove('active'));
-        
-        //index project
-        const currentIndex = document.querySelector('.projects-list .active').dataset.index;
-        setIndex(currentIndex);
-       
-        
+
     }
 
     function handleScript (id, source){
@@ -49,9 +50,19 @@ const Projects = () => {
         handleScript('tilt', "./scripts/tilt/vanilla-tilt.js");
         handleScript('anime', "./scripts/anime/lib/anime.min.js" )
         handleScript('pieces', "./scripts/pieces/dist/pieces.min.js" )
-        handleScript('mypieces', "./scripts/mypiece/pieces.js" )        
-    }, []);    
+        handleScript('mypieces', "./scripts/mypiece/pieces.js" ) 
+        
+    }, []);    
    
+    /*
+    {Object.entries(projects).map((project, i)=>{
+                                    if(i === index){
+                                        
+                                        return <ProjectInfos project={project1} key={i}/>   
+                                    } 
+                                    return null;                              
+                                })}
+    */
     
     return (
         <main className="projects-container js">
@@ -69,7 +80,7 @@ const Projects = () => {
                             projectList.projectName.map((project, i)=>{
                                 const id = "id";
                                 return (
-                                    <li key={i} data-index={i} className="hover">
+                                    <li key={i} data-index={i} className="hover" >
                                         li 
                                         <span className="green">&nbsp; {id.split('').map((letter, i )=>{
                                                 return(
@@ -114,13 +125,10 @@ const Projects = () => {
                             data-tilt-speed="400" 
                             data-tilt-glare = "true"
                             data-tilt-max-glare="0.5"
-                        >        
-                                {Object.entries(projects).map((project, i)=>{
-                                    if(i === index){
-                                    return <ProjectInfos project={project[1]} key={i}/>   
-                                    } 
-                                    return null;                              
-                                })}
+                        >         
+                            
+                         <ProjectInfos project={projectArray[index]} key={index}/>                            
+                            
                         </div>
                     </div>    
             </article>          
