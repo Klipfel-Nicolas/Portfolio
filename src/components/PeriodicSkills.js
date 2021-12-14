@@ -88,10 +88,7 @@ class PeriodicSkills extends Component {
                     object.position.y = -table[i + 4] * 180 + (height*1.2); 
                 }
                 targets.table.push(object);
-            } 
-
-    
-            
+            }
             
 
     //SPHERE
@@ -117,7 +114,8 @@ class PeriodicSkills extends Component {
                 }
             }
             sphere()
-    // HELIX
+    
+            // HELIX
             function helix(){
                 const vector = new THREE.Vector3();
 
@@ -147,7 +145,8 @@ class PeriodicSkills extends Component {
             }
             
             helix()
-    //GRID            
+    
+            //GRID            
                 for (let i =0 ; i<objects.length; i++ ) {   
                     const object = new THREE.Object3D();
             

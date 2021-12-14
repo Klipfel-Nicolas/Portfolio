@@ -110,7 +110,7 @@ const Skills = () => {
                                 <li className="vertical "></li>
                                 <IsometricBlock language={'MySQL'} icon={ SiMysql} color={"#00758F"} number={6} />
                                 <li className="horizontal "></li>
-                                <IsometricBlock language={'MondoDB'} icon={ DiMongodb } color={"#589136"} number={4} />
+                                <IsometricBlock language={'MongoDB'} icon={ DiMongodb } color={"#589136"} number={4} />
                                 <li className="vertical "></li>
                                 <IsometricBlock language={'Node.JS'} icon={ SiNodeDotJs } color={"#8DBF40"} number={4} />
                                 <li className="vertical "></li>
